@@ -32,7 +32,7 @@ const createSiteMenuTemplate = () => {
     </section>`
   );
 };
-const createSiteFilterTemplate = () => {
+const createFilterTemplate = () => {
   return (
     `<section class="main__filter filter container">
       <input
@@ -92,6 +92,18 @@ const createSiteFilterTemplate = () => {
       <label for="filter__archive" class="filter__label"
         >Archive <span class="filter__archive-count">115</span></label
       >
+    </section>`
+  );
+};
+const createBoardTemplate = () => {
+  return (
+    `<section class="board container">
+      <div class="board__filter-list">
+        <a href="#" class="board__filter">SORT BY DEFAULT</a>
+        <a href="#" class="board__filter">SORT BY DATE up</a>
+        <a href="#" class="board__filter">SORT BY DATE down</a>
+      </div>
+      <div class="board__tasks"></div>
     </section>`
   );
 };
