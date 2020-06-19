@@ -353,3 +353,7 @@ const createLoadMoreButtonTemplate = () => {
     `<button class="load-more" type="button">load more</button>`
   );
 };
+
+const render = (container, template, place = 'beforeend') => {
+  container.insertAdjacentHTML(place, template);
+};
